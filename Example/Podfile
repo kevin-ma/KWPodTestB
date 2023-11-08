@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '10.0'
+
+target 'KWPodTestB_Example' do
+  pod 'KWPodTestB', :path => '../'
+
+  target 'KWPodTestB_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
