@@ -37,7 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0E98B0B6F115174AB1D5B030 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		0E98B0B6F115174AB1D5B030 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		1D9E2B0D81AF2B96BEA2905F /* Pods-KWPodTestB_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KWPodTestB_Tests.release.xcconfig"; path = "Target Support Files/Pods-KWPodTestB_Tests/Pods-KWPodTestB_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		20B7871EA7B08E12C0674BC1 /* Pods-KWPodTestB_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KWPodTestB_Example.release.xcconfig"; path = "Target Support Files/Pods-KWPodTestB_Example/Pods-KWPodTestB_Example.release.xcconfig"; sourceTree = "<group>"; };
 		3114C3C13A6F15415A9EB978 /* Pods_KWPodTestB_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KWPodTestB_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -64,8 +64,8 @@
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B12B66D7D8D528C93E009E15 /* Pods-KWPodTestB_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KWPodTestB_Tests.debug.xcconfig"; path = "Target Support Files/Pods-KWPodTestB_Tests/Pods-KWPodTestB_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		BCA686158C9DC71177CF8B4A /* Pods-KWPodTestB_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KWPodTestB_Example.debug.xcconfig"; path = "Target Support Files/Pods-KWPodTestB_Example/Pods-KWPodTestB_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		D8448B31FB85B2D963C32189 /* KWPodTestB.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = KWPodTestB.podspec; path = ../KWPodTestB.podspec; sourceTree = "<group>"; };
-		E77CB1104515740D4FA49384 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		D8448B31FB85B2D963C32189 /* KWPodTestB.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = KWPodTestB.podspec; path = ../KWPodTestB.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		E77CB1104515740D4FA49384 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		F1E2D570871E1ED931C36350 /* Pods_KWPodTestB_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KWPodTestB_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -193,7 +193,6 @@
 				B12B66D7D8D528C93E009E15 /* Pods-KWPodTestB_Tests.debug.xcconfig */,
 				1D9E2B0D81AF2B96BEA2905F /* Pods-KWPodTestB_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -258,6 +257,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -302,10 +302,12 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-KWPodTestB_Example/Pods-KWPodTestB_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/KWPodTestA/KWPodTestA.framework",
 				"${BUILT_PRODUCTS_DIR}/KWPodTestB/KWPodTestB.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KWPodTestA.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KWPodTestB.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;

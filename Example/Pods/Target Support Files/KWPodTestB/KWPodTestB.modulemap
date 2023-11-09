@@ -1,0 +1,6 @@
+framework module KWPodTestB {
+  umbrella header "KWPodTestB-umbrella.h"
+
+  export *
+  module * { export * }
+}
